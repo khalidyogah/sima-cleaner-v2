@@ -122,7 +122,7 @@ def process_files(uploaded_files):
                 out_row += 1
     
     for m in list(out_ws.merged_cells):
-    out_ws.unmerge_cells(str(m))
+        out_ws.unmerge_cells(str(m))
 
     out_ws.insert_rows(1, 3)
 
