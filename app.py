@@ -120,6 +120,9 @@ def process_files(uploaded_files):
                     out_ws.cell(out_row, c + 1, src_ws.cell(r, c).value)
 
                 out_row += 1
+    
+    for m in list(out_ws.merged_cells):
+    out_ws.unmerge_cells(str(m))
 
     out_ws.insert_rows(1, 3)
 
@@ -148,8 +151,8 @@ def process_files(uploaded_files):
     headers = [
         "No. Urut", "Satker", "Golongan Penyusutan", "Nomor Rekening",
         "Jenis Aktiva Tetap", "Nomor Aktiva Tetap", "Tahun Perolehan",
-        "Masa Manfaat", "Tarif Penyustan", "Nilai Perolehan",
-        "Nilai Buku s/d Bulan Lalu", "Penyusutan dalam tahun",
+        "Masa Manfaat", "Tarif Penyusutan", "Nilai Perolehan",
+        "Nilai Buku s/d Bulan Lalu",
         "Penyusutan s/d Bulan Lalu", "Biaya Peny. dalam Bulan",
         "Biaya Peny. s/d Bulan", "Akumulasi Penyusutan s/d Bulan",
         "Nilai Buku s/d Bulan ini", "Nomor Rekening Penyusutan"
