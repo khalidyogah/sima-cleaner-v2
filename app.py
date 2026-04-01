@@ -69,7 +69,7 @@ def clean_sheet(sheet):
 
 def map_filename(name):
     NAME_MAP = {
-        "DIVRE": "Kantor Divre Jawa Timur",
+        "DIVRE": "Kantor Divisi Regional Jawa Timur",
         "BWB": "KPH Banyuwangi Barat",
         "BWS": "KPH Banyuwangi Selatan",
         "BWU": "KPH Banyuwangi Utara",
@@ -93,7 +93,7 @@ def map_filename(name):
         "PSU": "KPH Pasuruan",
         "SRD": "KPH Saradan",
         "TBN": "KPH Tuban",
-        "DEPREN": "Departemen Perencanaan Jawa Timur",
+        "DEPREN": "Departemen Perencanaan Dan Pengembangan Bisnis Jatim",
     }
     return NAME_MAP.get(name, name)
 
