@@ -80,7 +80,7 @@ def map_filename(name):
         "JBR": "KPH Jember",
         "JBG": "KPH Jombang",
         "KDR": "KPH Kediri",
-        "LWU": "KPH Lawu",
+        "LWU": "KPH Lawu DS",
         "MDN": "KPH Madiun",
         "MDR": "KPH Madura",
         "MLG": "KPH Malang",
